@@ -1,0 +1,907 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.logo img{
+    width: 60px;
+}
+.header-menu{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header, .footer{
+    background-color: #fff;
+}
+.nav2, .header__burger{
+    display: none;
+}
+.nav a{
+    padding-left: 56px;
+    color: black;
+    font-weight: 500;
+    transition: .5s;
+}
+.nav_footer a{
+    padding: 18px 0;
+    display: block;
+    color: black;
+    font-weight: 500;
+    transition: .5s;
+}
+.nav_footer a:hover{
+    color: #9370DB;
+}
+.nav a:hover{ 
+   color: #9370DB;
+}
+.header__burger{
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 10;
+}
+.header__burger span{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    left: 0;
+    width: 100%;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+}
+.header__burger::before,
+.header__burger::after{
+    content: '';
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 2px;
+    transition: all 0.3s ease 0s;
+}
+.header__burger::before{
+    top: 0;
+}
+.header__burger::after{
+    bottom: 0;
+}
+.registration button{
+    outline:none;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 30px;
+    background-color: #9370DB;
+    transition: .5s;
+}
+.registration button:hover{
+    background-color: #643bb6;
+}
+
+.registration button a{
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+}
+.banner{
+    background-image: url(../assets/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+  color: #fff;
+  font-size: 80px;
+  transition: all .6s;
+}
+.banner h1:hover{
+   text-shadow: 0 0 50px #fff, 0 0 100px #fff;
+}
+.popular_goods{
+    padding: 100px 0;
+}
+.promotions{
+    padding-bottom: 80px;
+}
+.news_cards{
+    padding: 80px 0;
+}
+h2{
+    text-align: center;
+    font-size: 38px;
+}
+.popular_card, .news_card{
+    width: 26%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    row-gap: 28px;
+    box-shadow: 14px 10px 20px #9370DB;
+}
+.popular_card img, .news_card img, .product_card img{
+    width: 100%;
+}
+.popular_card_txt h3, .news_card_txt h3{
+    color: #000;
+    font-weight: 600;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+.popular_card_txt p, .news_card_txt p{
+    color: #000;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.popular_cards{
+    display: flex;
+    justify-content: center;
+    column-gap: 48px;
+    padding-top: 60px;
+    row-gap: 20px;
+}
+
+.popular_card button, .news_card button, .product_card button, .blog_btn{
+    outline:none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: 500;
+    background-color: #9370DB;
+    transition: .5s;
+}
+.popular_card button:hover, .news_card button:hover, .product_card button:hover, .blog_btn:hover{
+    background-color: #643bb6;
+}
+.promotions_block{
+    display: flex;
+}
+.popular_card a, .news_card a, .product_card a, .blog_txt a{
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}
+.promotion_card{
+    width: 50%;
+    display: flex;
+    transition: .5s;
+    padding: 20px;
+}
+.promotion_card img{
+ width: 40%;
+}
+.promotion_txt{
+    padding-left: 20px;
+}
+.promotion_txt h4{
+    font-size: 22px;
+}
+.promotion_txt p{
+ font-size: 18px;
+ font-weight: 500;
+ padding-top: 20px;
+}
+.promotion_txt a{
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}
+.promotion_txt button{
+    outline:none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 500;
+    background-color: #9370DB;
+    margin-top: 20px;
+    transition: .5s;
+}
+.promotion_txt button{
+    background-color: #643bb6;
+}
+.promotion_cards{
+    display: flex;
+    column-gap: 48px;
+    padding-top: 60px;
+    row-gap: 20px;
+    justify-content: center;
+}
+.promotion_card:hover{
+    box-shadow: 0 0 30px #9370DB;
+}
+.price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+    column-gap: 40px;
+}
+.new_position{
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    background-color: #f50000;
+}
+.footer-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+.logo_footer img{
+    width: 100px;   
+}
+.contacts a{
+    display: block;
+    padding: 10px 0;
+    color: #000;
+    font-weight: 500;
+}
+.icons_footer{
+    display: flex;
+    column-gap: 18px;
+    row-gap: 10px;
+}
+.information{
+    padding:10px 0;
+}
+.information a{
+    display: block;
+    padding: 4px 0;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* страница каталог */
+.button_filter_block{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+.filter_btn1 button, .filter_btn2 button{
+   outline: none;
+   border: none;
+   background-color: #fff;
+   color: #643bb6;
+   font-size: 18px;
+   font-weight: 600;
+   cursor: pointer;
+}
+.price_filter input{
+    outline: none;
+    border: 2px solid #9370DB;
+}
+.price_filter input:focus{
+    outline: #310a7e;
+    border: 2px solid #310a7e;
+}
+.filter_btn1{
+    padding: 0 20px 20px 20px;
+    display: none;
+}
+.filter_btn1.active{
+    display: block;
+}
+.filter_btn2{
+    padding: 0 20px 20px 20px;
+}
+.filter_btn2.active{
+    display: none;
+}
+.check_block{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.products_page{
+    display: flex;
+    padding-top: 20px;
+}
+.filter{
+    width: 30%;
+    padding: 0 20px;
+    display: none;
+}
+.filter.active{
+    display: block;
+}
+
+.product_card_group_title{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.product_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    row-gap: 40px;
+    padding-bottom: 100px;
+}
+.product_card_group{
+    padding: 0 30px;
+}
+.product_card{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    row-gap: 28px;
+    box-shadow: 14px 10px 20px #9370DB;
+}
+.product_card_txt h3{
+    padding-bottom: 10px;
+}
+.filter h4{
+    padding-bottom: 20px;
+}
+.checkbox_filters{
+    padding-bottom: 20px;
+}
+.checkbox_filters input{
+    margin: 14px 0;
+}
+.price_filter{
+    padding-bottom: 20px;
+}
+.price_filter input{
+    margin: 8px 0;
+    padding: 6px;
+}
+/* страница блоги */
+.blogs {
+    padding: 60px 0;
+}
+.blog{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-bottom: 40px;
+}
+.blog_txt p{
+    padding: 10px 0;
+}
+.blog img{
+    width: 50%;
+}
+.reactions img{
+    margin-left: 10px;
+}
+.comment button{
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+.comment{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.reactions img, .comment img{
+    width: 30px;
+}
+.comment input{
+    padding: 10px;
+    outline: none;
+    border: 2px solid #9370DB;
+}
+.comment input:focus {
+    outline: #310a7e;
+    border-color: #310a7e;
+}
+.feedback{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    padding: 30px 0;
+}
+/* личный кабинет */
+.user_photo{
+    padding: 100px 80px;
+    width: 26%;
+    text-align: center;
+    background-color: #a7a7a7;
+    border-radius: 20px;
+}
+.user_information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    padding: 30px;
+    box-shadow: 8px 8px 20px #9370DB;
+}
+.user_name button{
+    border: none;
+    background-color: #fff;
+}
+.user_name img{
+    width: 24px;
+}
+.user_name h3{
+    font-size: 26px;
+    font-weight: 600;
+}
+.contact_user_information{
+    padding: 40px 0 20px 0;
+}
+.contact_user_information p{
+   padding-top: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.user_name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts_coins_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user_coins_block{
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.coin_number_text, .coin_shop_text {
+    color: #9370DB;
+    font-size: 26px;
+    font-weight: 500;
+    text-shadow: 4px 4px 10px #9370DB;
+}
+.coin_number, .coin_shop{
+    color: #9370DB;
+    font-size: 56px;
+    font-weight: 600;
+    text-shadow: 4px 4px 10px #9370DB;
+}
+.order_status_block{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin: 40px 0 80px 0;
+}
+.order_status, .offer{
+    width: 50%;
+    height: 300px;
+    box-shadow: 6px 6px 20px #9370DB;
+    padding: 30px;
+}
+.order_status{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.offer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9370DB;
+}
+.offer p{
+    text-align: center;
+    width: 50%;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.order_status h3{
+font-size: 20px;
+color: #643bb6;
+}
+.order_status h4{
+font-size: 18px;
+padding: 14px 0;
+}
+.order_status p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.order_status_block_btn1{
+    padding: 10px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #9370DB;
+    transition: .5s;
+}
+.order_status_block_btn1:hover{
+    background-color: #643bb6;
+}
+.order_status_block_btn2:hover{
+    background-color: #cfcfcf;
+}
+.order_status_block_btn2{
+    padding: 10px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: .5s;
+}
+.order_status_block_btn1 a{
+   color: #fff;
+   transition: .5s;
+}
+.order_status_block_btn2 a{
+    color: #9370DB;
+    font-weight: 500;
+    transition: .5s;
+}
+/* о нас */
+.about_txt{
+    margin: 60px 0 30px 0;
+}
+.about_txt_h2{
+    font-size: 28px;
+    padding-bottom: 60px;
+}
+.about_txt p{
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.about_us_contacts{
+    display: flex;
+    padding: 50px 0;
+}
+.about_us_communication_methods{
+ padding-left: 50px;
+}
+.about_us_communication_methods a{
+    display: block;
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.about_us_communication_methods h3{
+    padding-bottom: 40px;
+}
+.h3_about_us{
+    padding-top: 40px;
+}
+
+
+@media screen and (min-width:320px) and (max-width: 767px){
+    .container{
+        max-width: none;
+    }
+    .header__burger{
+        display: flex;
+    }
+    .nav a, .registration button{
+        display: none;
+    }
+    .header__burger.active::before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active::after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger.active span{
+        transform: scale(0);
+    }
+    .nav2 {
+        position: absolute;
+        right: 0;
+        top:0;
+        background-color: #9370DB;
+        padding: 70px 20px 50px 20px;
+        width: 300px;
+    }
+    .nav2 a{
+       display: block;
+       padding: 20px 10px;
+       color: #000;
+       font-weight: 500;
+        font-size: 18px;
+    }
+    .nav2.active{
+        display:block; 
+    }
+    .banner h1{
+        font-size: 60px;
+        text-align: center;
+    }
+    .popular_card, .news_card{
+        width: 80%;
+    }
+    .popular_cards, .promotion_cards{
+        flex-wrap: wrap;
+    }
+    .promotion_card{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .promotion_card img{
+        width: 100%;
+    }
+    h2{
+        text-align: center;
+        font-size: 28px;
+    }
+    .footer-part{
+        flex-direction: column;
+    }
+    .logo_footer img{
+        width: 50px;   
+    }
+    .nav_footer{
+        display: none;
+    }
+    .footer_txt{
+        text-align: center;
+    }
+    .icons_footer{
+        justify-content: center;
+    }
+    .information a{
+        text-align: center;
+    }
+    .banner{
+        background-image: url(../assets/banner.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_us_contacts{
+       flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    iframe{
+        width: 100%;
+    }
+    .about_us_communication_methods{
+        padding-left: 0;
+        padding-top: 50px;
+    }
+    .h3_about_us, .about_us_communication_methods h3{
+        text-align: center;
+    }
+    .user_photo{
+        padding: 100px 80px;
+        width: 80%;
+    }
+    .user_information{
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 30px;
+    }
+    .user_coins_block{
+        width: 100%;
+    }
+    .order_status_block{
+        flex-direction: column;
+        column-gap: 30px;
+        row-gap: 30px;
+        margin: 40px 0 80px 0;
+    }
+    .order_status, .offer{
+        width: 100%;
+    }
+    .offer p{
+        width: 80%;
+    }
+    .blog{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .blog img{
+        width: 100%;
+    }
+    .reactions img, .comment img{
+        width: 20px;
+    }
+    .blogs{
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product_card{
+        width: 90%;
+    }
+    .product_cards{
+        justify-content: center;
+    }
+    
+    .products_page{
+        flex-direction: column;
+    }
+    .products_cards_groups h3{
+        font-size: 16px;
+    }
+    .products_cards_groups p{
+        font-size: 14px;
+    }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width: 1023px){
+    .container{
+        max-width: 963px;
+        padding: 0 30px;
+    }
+    .header__burger{
+        display: flex;
+    }
+    .nav a, .registration button{
+        display: none;
+    }
+    .header__burger.active::before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active::after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger.active span{
+        transform: scale(0);
+    }
+    .nav2 {
+        position: absolute;
+        right: 0;
+        top:0;
+        background-color: #9370DB;
+        padding: 70px 20px 50px 20px;
+        width: 300px;
+    }
+    .nav2 a{
+       display: block;
+       padding: 20px 10px;
+       color: #000;
+       font-weight: 500;
+        font-size: 18px;
+    }
+    .nav2.active{
+        display:block; 
+    }
+    .banner h1{
+        font-size: 70px;
+        text-align: center;
+    }
+    .popular_card, .news_card{
+        width: 40%;
+    }
+    .popular_cards, .promotion_cards{
+        flex-wrap: wrap;
+    }
+    .promotion_cards{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .promotion_card{
+        width: 100%;
+        display: flex;
+    }
+    .promotion_card img{
+        width: 30%;
+    }
+    h2{
+        text-align: center;
+        font-size: 28px;
+    }
+    .logo_footer img{
+        width: 80px;   
+    }
+    .footer_txt{
+        text-align: center;
+    }
+    .icons_footer{
+        justify-content: center;
+    }
+    .information a{
+        text-align: center;
+    }
+    .banner{
+        background-image: url(../assets/banner.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_us_contacts{
+        justify-content: center;
+    }
+    iframe{
+        width: 80%;
+        text-align: center;
+    }
+    .about_us_communication_methods{
+        padding-left: 0;
+        padding-top: 50px;
+    }
+    .user_information{
+        flex-wrap: wrap;
+    }
+    .user_photo {
+        text-align: center;
+        width: 50%;
+    }
+    .user_coins_block{
+        width: 50%;
+
+    }
+    .offer p{
+        width: 80%;
+    }
+    .blog{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .blog img{
+        width: 100%;
+    }
+    .reactions img, .comment img{
+        width: 30px;
+    }
+    .blogs{
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .product_card{
+        width: 48%;
+    }
+    .products_page{
+        flex-direction: column;
+    }
+    
+}
+
+
+
+
+
+
+
+
+

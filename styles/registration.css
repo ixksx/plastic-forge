@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 24px;
+}
+body{
+    background-image: url(../assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.login{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 30px;
+    column-gap: 10px;
+}
+.login a{
+   display: block;
+   color: #888888;
+   font-size: 14px;
+    font-weight: 500;
+    transition: .5s;
+}
+.login button{
+    border-radius: 50px;
+    padding: 4px 14px;
+    border: 2px solid #888888;
+    background-color: #fff;
+    color: #888888;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .5s;
+}
+.login:hover a{
+    color: #fff;
+}
+.login:hover button{
+    background-color: #888888;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.inputs a{
+    display: block;
+    margin: 16px auto;
+}
+input{
+    outline: none;
+    border: 2px solid #9370DB;
+    padding: 10px;
+    margin: 8px 0 12px 0;
+    border-radius: 12px;
+}
+.icons{
+    padding-top: 20px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+.icons img{
+    width: 34px;
+}
+.form{
+    margin: auto 0;
+    width: 30%;
+}
+.form p {
+    color: #888888;
+    font-weight: 500;
+    font-size: 16px;
+}
+.inputs_reg p{
+    padding: 16px 0;
+}
+.inputs button{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    background-color: #93D4CD;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+}
+label{
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+input:focus {
+    outline: #310a7e;
+    border-color: #310a7e;
+}
+.index_link{
+    color: #888888;
+    font-size: 14px;
+    font-weight: 500;
+}
+.inputs button{
+    outline:none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: 400;
+    background-color: #9370DB;
+    transition: .5s;
+    font-size: 14px;
+    color: #fff;
+}
+.inputs button:hover{
+    background-color: #643bb6;
+}
+.form{
+    width: 30%;
+    background-color: #fff;
+    padding: 30px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+@media screen and (min-width:320px) and (max-width: 767px){
+    h1{
+        font-size: 20px;
+    }
+    .form{
+        width: 80%;
+    }
+    label{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 1023px){
+    .form{
+        width: 60%;
+    }
+}
+
+
+
+
+
+
